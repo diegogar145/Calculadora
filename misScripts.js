@@ -1,3 +1,7 @@
+function mostrarResultado(resultado) {
+    document.getElementById("priemrResultado").textContent = resultado;
+}
+
 function sumar(){
     let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
@@ -30,7 +34,18 @@ function dividir(){
     mostrarResultado(resultado);
 }
 
+function potencia(){
+    let primerValor = document.getElementById("primerNumero").value;
+    let segundoValor = document.getElementById("segundoNumero").value;
+    resultado = Math.pow(primerValor, segundoValor)
 
-function mostrarResultado(resultado) {
-    document.getElementById("priemrResultado").textContent = resultado;
+    mostrarResultado(resultado);
+}
+
+function raizCuadra(){
+    let primerValor = document.getElementById("primerNumero").value;
+    let segundoValor = document.getElementById("segundoNumero").value;
+    resultado = Math.sqrt(primerValor, segundoValor)
+
+    mostrarResultado(resultado);
 }
