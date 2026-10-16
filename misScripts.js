@@ -49,3 +49,7 @@ function raizCuadra(){
 
     mostrarResultado(resultado);
 }
+
+function redondear(){
+    
+}
