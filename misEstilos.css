@@ -1,3 +1,19 @@
 body{
     background-color:#60975d;
 }
+
+input{
+    background-color:#F1DFC5;
+}
+
+.operacionesBasicas{
+    background-color: #24552b ;
+}
+
+.operacionesAvanzadas{
+    background-color: #7f2424;
+}
+
+.redondear{
+    background-color: #E6A15A;
+}
