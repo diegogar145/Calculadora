@@ -12,17 +12,23 @@
         
 
         <br><br>
-        <button onclick="sumar()">Suma</button>
-        <button onclick="restar()"> Resta</button>
-        <button onclick="multiplicar()">Multiplicacion</button>
-        <button onclick="dividir()">Division</button>
+          <button onclick="sumar()" class="operacionesBasicas">Suma</button>
+          <button onclick="restar()" class="operacionesBasicas"> Resta</button>
+          <button onclick="multiplicar()" class="operacionesBasicas">Multiplicacion</button>
+          <button onclick="dividir()" class="operacionesBasicas">Division</button>
         <br><br>
-        <button onclick="potencia()">Potencia</button>
-        <button onclick="raizCuadra()">Raiz Cuadrada</button>
+        <button onclick="potencia()" class="operacionesAvanzadas">Potenciacion</button>
+        <button onclick="raizCuadra()" class="operacionesAvanzadas">Raiz Cuadrada</button>
         <br><br>
-        <button onclick="valorAbsoluto()">Valor Absoluto</button>
-        <button onclick="random()">Random</button>
+        <button onclick="valorAbsoluto()" class="operacionesAvanzadas">Valor Absoluto</button>
+        <button onclick="random()" class="operacionesAvanzadas">Numero Random</button>
         <br><br>
-        <input type="number" id="primerResultado">
-      </body>
+        <h2>Resultado Operaciones :</h2><input type="number" id="primerResultado"></input>
+        <br><br>
+        <button onclick="redondear()" class="redondear">Redondear</button>
+        <button onclick="redondearHaciaAbajo()" class="redondear">Redondear Hacia Abajo</button>
+        <button onclick="redondearHaciaArriba()" class="redondear">Redondear Hacia Arriba</button>
+        <br><br>
+        <h2>Resultultado Redondeado : <span id="resultadoRedondeo"></span></h2>
+     </body>
 </html>

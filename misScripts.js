@@ -2,10 +2,14 @@ function mostrarResultado(resultado) {
     document.getElementById("primerResultado").value = resultado;
 }
 
+function mostrarResultado2(resultado2){
+    document.getElementById("resultadoRedondeo").textContent = resultado2;
+}
+
 function sumar(){
     let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
-    resultado= +primerValor + +segundoValor;
+    resultado = +primerValor + +segundoValor;
 
     mostrarResultado(resultado);
    }
@@ -13,7 +17,7 @@ function sumar(){
 function restar(){
     let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
-    resultado= +primerValor - +segundoValor;
+    resultado = +primerValor - +segundoValor;
     
     mostrarResultado(resultado);
 }
@@ -21,7 +25,7 @@ function restar(){
 function multiplicar(){
     let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
-    resultado= +primerValor * +segundoValor;
+    resultado = +primerValor * +segundoValor;
    
     mostrarResultado(resultado);
 }
@@ -29,7 +33,7 @@ function multiplicar(){
 function dividir(){
     let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
-    resultado= +primerValor / +segundoValor;
+    resultado = +primerValor / +segundoValor;
    
     mostrarResultado(resultado);
 }
@@ -62,5 +66,19 @@ function random(){
 }
 
 function redondear(){
-    
+    let number = document.getElementById("primerResultado").value;
+    resultado2 = Math.round(number)
+    mostrarResultado2(resultado2);
+}
+
+function redondearHaciaAbajo(){
+     let number = document.getElementById("primerResultado").value;
+    resultado2 = Math.floor(number)
+    mostrarResultado2(resultado2);
+}
+
+function redondearHaciaArriba(){
+     let number = document.getElementById("primerResultado").value;
+    resultado2 = Math.ceil(number)
+    mostrarResultado2(resultado2);
 }
