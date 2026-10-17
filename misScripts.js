@@ -1,5 +1,5 @@
 function mostrarResultado(resultado) {
-    document.getElementById("priemrResultado").textContent = resultado;
+    document.getElementById("primerResultado").value = resultado;
 }
 
 function sumar(){
@@ -43,10 +43,21 @@ function potencia(){
 }
 
 function raizCuadra(){
-    let primerValor = document.getElementById("primerNumero").value;
     let segundoValor = document.getElementById("segundoNumero").value;
-    resultado = Math.sqrt(primerValor, segundoValor)
+    resultado = Math.sqrt(segundoValor)
 
+    mostrarResultado(resultado);
+}
+
+function valorAbsoluto(){
+    let segundoValor = document.getElementById("segundoNumero").value;
+    resultado = Math.abs(segundoValor)
+    mostrarResultado(resultado);
+}
+
+function random(){
+    let segundoValor = document.getElementById("segundoNumero").value;
+    resultado = Math.random()
     mostrarResultado(resultado);
 }
 
